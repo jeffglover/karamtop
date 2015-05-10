@@ -1,5 +1,5 @@
 # karamtop
-Superkaramba theme that emulates the functionality of top
+Superkaramba theme that emulates the functionality of top - http://kde-look.org/content/show.php?content=13140
 Copyright (C) Jeff Glover
 
 Designed to work with TDE - T Desktop Enhancements from www.kde-look.org
