@@ -1,0 +1,93 @@
+0.45
+--------------
+- Now defaults with threading off, but supports turning it back on through the config.
+
+0.44a
+--------------
+- Fixed compatibility issues with Python 2.3
+
+0.44
+--------------
+- Really fixed crashing issues. I simplified the threading engine a lot more.
+- Added in support for a better sorting module new in Python 2.4. If you don't have Python 2.4 it should catch this and use the previous method. I do not have any machines with Python 2.3. So, I'm not sure if this works. Please let me know if there are problems.
+
+0.43
+--------------
+- Fixed a problem where the proc thread would sometimes die if superkaramba locked for a long enough time. Basically it would stop updating. Specifally when liquid weather updates.
+
+0.42
+--------------
+- Had another bug causing random periodic crashes.
+
+0.41
+--------------
+- Improved code for running multiple instances.
+- When memory for a process is 0 don't put 'k' after it.
+
+0.40
+--------------
+- Supports running multiple instances
+- Added an AeroG theme
+
+0.39
+--------------
+- Added GUI option to configure the command (program name) alignment
+- Which led to modifying the theme config files. In the future. I will try not to make changes that require modification of the theme config files.
+- During testing some changes were made to the look of flatgray. I forgot to change things back for the last release. Mostly minor changes.
+
+0.38
+--------------
+Redid the main interface. Now allows for themes. See inside the themes directory
+Provides GUI options to configure:
+- The theme (currently flatgray and TDE)
+- Whether to hide processes with a cpu percent of 0 (overrides theme settings)
+- The order of the output (overrides theme settings)
+
+0.37
+--------------
+(internal release)
+Complete redesign of the engine. Simpler and more efficient
+
+0.36
+--------------
+Fixed a bug in the threading engine that was locking improperly. It caused periodic superkaramba crashes. Sorry.
+
+0.35a
+--------------
+Support for TDE look.
+Just load karamtop.TDE.theme rather than karamtop.theme. No other changes.
+
+0.35
+--------------
+Lots of changes in the engine. Added many variables to allow customization in karamtop.py. It's not very well documented, settings to note are:
+-TopRun.procOutformat # ability to change the ordering of cpu, command and memory.
+-TopRun.hide_0 # Whether to hide processes with a cpu percent of 0
+
+0.34
+--------------
+Fixed a fairly serious bug where every time Superkaramba reloaded (not exited) karamTop. The existing thread remained.
+
+This involved quite a bit of work in pytop.py
+
+0.33
+--------------
+Complete change in the look. Designed to fit my new theme, MiniKaramba. Hopefully nobody was attached to the TDE look.
+A few minor changes in the engine.
+
+0.32
+--------------
+A few tweaks with the engine. Now packaged in skz format for superkaramba 0.37. Should still work with superkaramba 0.36.
+
+
+0.31
+--------------
+Just a few internal changes. Making pytop.py easier to use in other scripts. Unless any bugs creep up, I most likely won't be updating for awhile.
+
+
+0.30
+--------------
+I've done some major work since I last released anything publicly. I managed to get python to parse /proc and make it a separate thread. Since this is a bit more complex than just parsing top. There could be bugs.
+
+Changed background image to the one from the latest version of TDE.
+
+I took out some "features" that were rather useless and really me playing around.

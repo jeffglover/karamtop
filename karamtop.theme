@@ -1,0 +1,13 @@
+#karamtop by Moloch http://www.kde-look.org/content/show.php?content=13140
+#superkaramba theme to show an X number of running processes
+#
+#Released under the GPL <http://www.fsf.org/licenses/gpl.html>
+#
+#all graphics liscensed GPL by original author
+#
+
+KARAMBA  X=500 Y=300 interval=2000 locked=true
+
+text name="titletext" x=0 y=0 value="Processes:" bgcolor=0,0,0
+
+text name="toptext" x=0 y=0 value=" " bgcolor=150,150,150

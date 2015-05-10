@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE superkaramba_theme>
+<superkaramba_theme>
+	<themefile>karamtop.theme</themefile>
+	<python_module>karamtop.py</python_module>
+	<name>karamTop</name>
+	<icon></icon>
+	<description>Shows an X number of runnig processes with CPU, Memory usage and program name, sorted by CPU.</description>
+	<author>Moloch</author>
+	<author_email></author_email>
+	<homepage>http://www.kde-look.org/content/show.php?content=13140</homepage>
+	<version>0.45</version>
+	<license>GPL-2</license>
+</superkaramba_theme>
